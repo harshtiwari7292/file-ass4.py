@@ -1,0 +1,17 @@
+#TASK1
+file= open('Sample.txt','r+')
+writing= file.write('Line 1:This is a sample text file.\n')
+writing2=file.write('Line 2: It contains multiple lines.\n')
+file.close()
+
+try:
+    file = open('Sample.txt','r+')
+    reading= file.read()
+    print('Reading file content:')
+    print(reading)
+    file.close()
+
+
+
+except FileNotFoundError:
+    print("Error:The file 'Sample.txt' was not found")
